@@ -549,17 +549,11 @@ video {
   font-weight: 700;
 }
 
-.text-purple-800{
+.text-Secondary-Tchina-Orange{
   --tw-text-opacity: 1;
-  color: rgb(107 33 168 / var(--tw-text-opacity));
+  color: rgb(255 115 29 / var(--tw-text-opacity));
 }
 
-.text-Secondary-Success{
-  --tw-text-opacity: 1;
-  color: rgb(92 255 138 / var(--tw-text-opacity));
-}
-
-.text-Primary-Ocean-Blue{
-  --tw-text-opacity: 1;
-  color: rgb(71 127 246 / var(--tw-text-opacity));
+.underline{
+  text-decoration-line: underline;
 }
