@@ -10,10 +10,10 @@ module.exports = {
       colors:{
         "Neutral":{
           "Black":"#000000",
-          "90":"252E36",
-          "50":"A4B0C1",
-          "20":"E3E4E4",
-          "10":"F9F9F9",
+          "90":"#252E36",
+          "50":"#A4B0C1",
+          "20":"#E3E4E4",
+          "10":"#F9F9F9",
           "White":"#FFFFFF",
         },
         "Primary":{
