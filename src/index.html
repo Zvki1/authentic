@@ -10,7 +10,9 @@
 
   <body class="font-poppins bg-Neutral-10 w-screen h-screen overflow-x-hidden">
     <!-- header section -->
-    <header class="flex justify-between items-center p-4 gap-x-4 bg-Neutral-White md:justify-around">
+    <header
+      class="flex justify-between items-center p-4 gap-x-4 bg-Neutral-White md:justify-around"
+    >
       <!-- top left div -->
       <div class="flex items-center gap-x-2">
         <img
@@ -30,7 +32,7 @@
             class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
           >
             <svg
-              class="w-4 h-4 text-gray-500 dark:text-gray-400"
+              class="w-4 h-4 text-gray-500"
               aria-hidden="true"
               xmlns="http://www.w3.org/2000/svg"
               fill="none"
@@ -48,7 +50,7 @@
           <input
             type="search"
             id="default-search"
-            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+            class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500"
             placeholder="Search..."
             required
           />
@@ -61,135 +63,556 @@
         <a href="#"><img src="../Assets/profile.png" alt=" " width="30" /></a>
         <a href="#"><img src="../Assets/cart.png" alt="" width="30" /></a>
       </div>
-      
+
       <!-- top right div for desktop screens -->
-      <div class="hidden md:block ">
-        <ul class="flex items-center space-x-4 font-manrope text-gray-400 text-base font-bold  ">
-          <li class="text-Primary-Night-Blue border-b-4 border-Primary-Night-Blue"><a href="#">Home</a></li>
-          <li><a href="#"><img src="../Assets/VerticalRectangle.png" alt=""></a></li>
-          <li class="flex items-center space-x-1  ">
+      <div class="hidden md:block">
+        <ul
+          class="flex items-center space-x-4 font-manrope text-gray-400 text-base font-bold"
+        >
+          <li
+            class="text-Primary-Night-Blue border-b-4 border-Primary-Night-Blue"
+          >
+            <a href="#">Home</a>
+          </li>
+          <li>
+            <a href="#"><img src="../Assets/VerticalRectangle.png" alt="" /></a>
+          </li>
+          <li class="flex items-center space-x-1">
             <a href="#">Cart</a>
-            <span class="inline-flex items-center justify-center w-4 h-4  text-xs font-semibold text-Neutral-White bg-Secondary-Tchina-Orange rounded-full">
+            <span
+              class="inline-flex items-center justify-center w-4 h-4 text-xs font-semibold text-Neutral-White bg-Secondary-Tchina-Orange rounded-full"
+            >
               2
             </span>
           </li>
           <div class="flex space-x-1">
-            <li><a href="#"><img src="../Assets/VerticalRectangle.png" alt=""></a></li>
-          <li><a href="#"><img src="../Assets/VerticalRectangle.png" alt=""></a></li>
+            <li>
+              <a href="#"
+                ><img src="../Assets/VerticalRectangle.png" alt=""
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="../Assets/VerticalRectangle.png" alt=""
+              /></a>
+            </li>
           </div>
-          <li><a href="#"><img class="w-10 h-10 rounded-full" src="../Assets/ProfilePicture.jpg" alt="Rounded avatar"></a></li>
+          <li>
+            <a href="#"
+              ><img
+                class="w-10 h-10 rounded-full"
+                src="../Assets/ProfilePicture.jpg"
+                alt="Rounded avatar"
+            /></a>
+          </li>
         </ul>
       </div>
     </header>
 
-      <!-- nav section mobile version -->
-          <!-- we will import the Drawer navigation from flowbite but we need to understand the code  -->
+    <!-- nav section mobile version -->
+    <!-- we will import the Drawer navigation from flowbite but we need to understand the code  -->
     <!-- nav for desktop version -->
-    <nav class="">   
-      <ul class="flex uppercase py-3 px-8 font-poppins font-bold text-base text-gray-400 space-x-8 overflow-x-auto">
-        <li class="text-Neutral-Black      "   ><a href="#" class="whitespace-nowrap">Top Sales</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">Women</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">Men</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">Unisex</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">Gift</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">New arrivals</a></li>
-        <li class="hover:text-Neutral-90  " ><a href="#" class="whitespace-nowrap"> special offers</a></li>
-        <li  class="hover:text-Neutral-90  "> <a href="#" class="whitespace-nowrap">limited editions</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">Unisex</a></li>
-        <li  class="hover:text-Neutral-90  "><a href="#" class="whitespace-nowrap">Men</a></li>
+    <nav class="">
+      <ul
+        class="flex uppercase py-3 px-8 font-poppins font-bold text-base text-gray-400 space-x-8 overflow-x-auto"
+      >
+        <li class="text-Neutral-Black">
+          <a href="#" class="whitespace-nowrap">Top Sales</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">Women</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">Men</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">Unisex</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">Gift</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">New arrivals</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap"> special offers</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">limited editions</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">Unisex</a>
+        </li>
+        <li class="hover:text-Neutral-90">
+          <a href="#" class="whitespace-nowrap">Men</a>
+        </li>
       </ul>
     </nav>
 
     <!-- i have a horizontal scrolling problem in mobile view   maybe 3la jal lbrowser psk f firefox mchet -->
 
     <!-- hero  section  -->
-    <section class="bg-[#1D1E23] flex flex-col font-poppins text-white px-4 py-14 md:flex-row md:items-center md:justify-center md:space-x-24 md:px-16">
-      <div class="flex flex-col space-y-5 items-center py-3 md:items-start md:space-y-6">
-       <div class="flex flex-col space-y-5 md:space-y-6">
-        <h1 class="font-bold text-[30px]">
-          Experience Luxury Scents
-        </h1>
-        <p class="font-medium text-[14px] leading-normal hidden md:block">
-          At first, for some time, I was not able to answer him one word;<br> but as he had taken me in his arms I held fast by him,<br> or i should have fallen to the ground.
-        </p>
-       </div>
-       <div class="block md:hidden"></div>
-        <button type="button" class="text-white bg-Primary-Ocean-Blue hover:bg-Primary-Sky-Blue focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-2.5 text-center mr-2 mb-2 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800">Shop Now</button>
+    <section
+      class="bg-[#1D1E23] flex flex-col font-poppins text-white px-4 py-14 md:flex-row md:items-center md:justify-center md:space-x-24 md:px-16"
+    >
+      <div
+        class="flex flex-col space-y-5 items-center py-3 md:items-start md:space-y-6"
+      >
+        <div class="flex flex-col space-y-5 md:space-y-6">
+          <h1 class="font-bold text-[30px]">Experience Luxury Scents</h1>
+          <p class="font-medium text-[14px] leading-normal hidden md:block">
+            At first, for some time, I was not able to answer him one word;<br />
+            but as he had taken me in his arms I held fast by him,<br />
+            or i should have fallen to the ground.
+          </p>
+        </div>
+        <div class="block md:hidden"></div>
+        <button
+          type="button"
+          class="text-white bg-Primary-Ocean-Blue hover:bg-Primary-Sky-Blue focus:outline-none focus:ring-4 focus:ring-blue-300 font-medium rounded-full text-sm px-10 py-2.5 text-center mr-2 mb-2"
+        >
+          Shop Now
+        </button>
       </div>
-      <img src="../Assets/parfumeformain.png" alt="parfume" width="86"  class="absolute top-44 -rotate-12 md:hidden">
-      <img src="../Assets/parfumeformain2.png" alt="parfume" width="86" class="absolute right-3 top-44 rotate-12 md:hidden" >
-      
-      
+      <img
+        src="../Assets/parfumeformain.png"
+        alt="parfume"
+        width="86"
+        class="absolute top-44 -rotate-12 md:hidden"
+      />
+      <img
+        src="../Assets/parfumeformain2.png"
+        alt="parfume"
+        width="86"
+        class="absolute right-3 top-44 rotate-12 md:hidden"
+      />
+
       <div>
         <!-- mazal mankhayer kifesh tkun limage fresponsive -->
-        <img src="../Assets/parfumeformain.png" alt="parfume pic" class="hidden md:block rotate-6" width="360">
-      </div>  
+        <img
+          src="../Assets/parfumeformain.png"
+          alt="parfume pic"
+          class="hidden md:block rotate-6"
+          width="360"
+        />
+      </div>
     </section>
 
     <!-- products section -->
-    <section class="mt-8 px-44">
-      <h1 class="font-poppins font-bold text-2xl">Top Sales</h1>
-      <!-- products div -->
-      <!-- <div class="px-3 py-4">
-        <img src="../Assets/new-product/N1-2.png" alt="">
-        <p>Gentel Man GIVENCHY</p>
-        <div>
-          <p>31500 <span>DA</span></p>
-          <div>
-            <p>-20%</p>
-            <p>38000 <span>DA</span></p>
+
+    <section class="px-16 lg:px-28 xl:px-44">
+      <div class="mx-auto max-w-2xl pt-10 pb-16 lg:max-w-7xl">
+        <!-- <h2 class="sr-only">Products</h2> -->
+        <h1 class="font-poppins font-bold pb-4 text-2xl">Top Sales</h1>
+        <div
+          class="grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 xl:gap-x-10"
+        >
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a
+              title="Dolce Gabanna Only One"
+              href="./Product.html"
+              class="group"
+            >
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-contain"
+                    src="../Assets/best-product/B1-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-contain transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/best-product/B1-2.png"
+                    alt="product image"
+                  />
+                </div>
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Dolce Gabanna Only One
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >28500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-20%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >32500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
           </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Amo Ferragano" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/new-product/N4-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-cover object-center transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/new-product/N4-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Amo Ferragano
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >15500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-30%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >20500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Lacoste" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/onsale/D5-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-contain transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/onsale/D5-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Lacoste
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >38500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-10%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >42500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Wish Chopard" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/onsale/D9-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-cover object-center transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/onsale/D9-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Wish Chopard
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >28500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-15%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >33500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Jimmy Choo" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/onsale/D11-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-cover object-center transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/onsale/D11-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Jimmy Choo
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >17500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-15%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >22000
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Goldea Absolute" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/onsale/D12-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-cover object-center transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/onsale/D12-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Goldea Absolute
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >29500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-15%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >32500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Olymepea" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/onsale/D2-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-cover object-center transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/onsale/D2-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Olymepea
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >18500 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-25%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >23500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <div class="rounded-lg border border-Neutral-50 bg-white">
+            <a href="./Product.html" title="Nina Ricci" class="group">
+              <div class="m-4">
+                <div class="relative overflow-hidden rounded-lg aspect-square">
+                  <img
+                    class="peer absolute top-0 right-0 h-full w-full object-cover object-center"
+                    src="../Assets/onsale/D7-1.png"
+                    alt="product image"
+                  />
+                  <img
+                    class="peer absolute top-0 -right-96 h-full w-full object-cover object-center transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0"
+                    src="../Assets/onsale/D7-2.png"
+                    alt="product image"
+                  />
+                </div>
+
+                <h5
+                  class="truncate mt-4 text-lg font-poppins font-medium tracking-tight text-Neutral-90"
+                >
+                  Nina Ricci
+                </h5>
+                <div class="mt-2 mb-3 flex justify-between items-end">
+                  <p>
+                    <span
+                      class="mt-3 text-2xl font-manrope font-medium text-Primary-Ocean-Blue"
+                      >12000 <span class="font-normal text-base">DA</span></span
+                    >
+                  </p>
+                  <div class="flex flex-col items-end">
+                    <span
+                      class="text-xs font-manrope font-normal text-Secondary-Tchina-Orange"
+                      >-07%
+                    </span>
+
+                    <span
+                      class="text-sm font-manrope line-through font-medium text-Neutral-50"
+                      >13500
+                      <span class="font-extralight text-xs">DA</span></span
+                    >
+                  </div>
+                </div>
+                <button
+                  type="button"
+                  class="xl:invisible xl:group-hover:visible text-white bg-blue-600 hover:bg-blue-700 focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
+                >
+                  Add To Cart
+                </button>
+              </div>
+            </a>
+          </div>
+          <!-- More products... -->
         </div>
-        <button>Add To Cart</button>
-      </div> -->
-
-<!-- product card -->
-  <div class="group my-10 flex w-full max-w-xs flex-col overflow-hidden rounded-lg border border-gray-100 bg-white shadow-md">
-    <!-- product pic div -->
-  <div class="relative mx-3 mt-3 flex h-60 overflow-hidden rounded-xl" href="#">
-    <img class="peer absolute top-0 right-0 h-full w-full object-contain" src="../Assets/best-product/B1-1.png" alt="product image" />
-    <img class="peer absolute top-0 -right-96 h-full w-full object-contain transition-all delay-100 duration-700 hover:right-0 peer-hover:right-0" src="../Assets/best-product/B1-2.png" alt="product image" />
-    <span class="absolute top-0 left-0 m-2 rounded-full bg-Primary-Night-Blue px-2 text-center text-sm font-medium text-white">39% OFF</span>
-  </div>
-  <!-- product infos div -->
-  <div class="mt-4 px-5 pb-5">
-    <a href="#">
-      <h5 class="text-lg font-poppins font-semibold tracking-tight text-slate-900">Dolce Gabanna Only One</h5>
-    </a>
-    <div class="mt-2 mb-5 flex  justify-between">
-      <p>
-        <span class="text-2xl font-manrope font-semibold text-Primary-Ocean-Blue">38500 <span class="font-normal text-base">DA</span></span>
-        <!-- <span class="text-sm text-slate-900 line-through">$699</span> -->
-      </p>
-      <div class="flex  mt-2.5 mb-5">
-        <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-yellow-300 mr-1" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <svg class="w-4 h-4 text-gray-200 dark:text-gray-600" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 22 20">
-            <path d="M20.924 7.625a1.523 1.523 0 0 0-1.238-1.044l-5.051-.734-2.259-4.577a1.534 1.534 0 0 0-2.752 0L7.365 5.847l-5.051.734A1.535 1.535 0 0 0 1.463 9.2l3.656 3.563-.863 5.031a1.532 1.532 0 0 0 2.226 1.616L11 17.033l4.518 2.375a1.534 1.534 0 0 0 2.226-1.617l-.863-5.03L20.537 9.2a1.523 1.523 0 0 0 .387-1.575Z"/>
-        </svg>
-        <span class="bg-blue-100 text-blue-800 text-xs font-semibold mr-2 px-2.5 py-0.5 rounded dark:bg-blue-200 dark:text-blue-800 ml-2">5.0</span>
-    </div>
-    </div>
-    <a href="#" class="flex items-center justify-center rounded-md bg-Primary-Ocean-Blue px-5 py-2.5 text-center text-sm font-medium text-white hover:bg-gray-700 focus:outline-none focus:ring-4 focus:ring-blue-300">  
-      Add to cart
-    </a>
-  </div>
-</div>
-
+      </div>
     </section>
-
-
-
-
   </body>
 </html>
