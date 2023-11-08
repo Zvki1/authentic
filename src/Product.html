@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link href="../dist/output.css" rel="stylesheet" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+      <!-- header section -->
+      <header class="flex justify-between items-center p-4 gap-x-4 bg-Neutral-White md:justify-around">
+        <!-- top left div -->
+        <div class="flex items-center gap-x-2">
+          <img
+            src="../Assets/Hamburger_icon.svg.png"
+            class="hidden"
+            alt=""
+            width="36"
+            height="36"
+          />
+          <a href="#" class="font-manrope font-bold text-base">Authentic</a>
+        </div>
+  
+        <!-- search form -->
+        <form class="flex-1 md:flex-none md:w-1/2">
+          <div class="relative w-full">
+            <div
+              class="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none"
+            >
+              <svg
+                class="w-4 h-4 text-gray-500 dark:text-gray-400"
+                aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 20 20"
+              >
+                <path
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="2"
+                  d="m19 19-4-4m0-7A7 7 0 1 1 1 8a7 7 0 0 1 14 0Z"
+                />
+              </svg>
+            </div>
+            <input
+              type="search"
+              id="default-search"
+              class="block w-full p-4 pl-10 text-sm text-gray-900 border border-gray-300 rounded-xl bg-gray-50 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500"
+              placeholder="Search..."
+              required
+            />
+          </div>
+        </form>
+  
+        <!-- top right div for mobile screens -->
+        <div class="flex items-center gap-x-2 md:hidden">
+          <!-- <a href="#"><img src="../Assets/search icon.png" alt="" width="30" ></a> -->
+          <a href="#"><img src="../Assets/profile.png" alt=" " width="30" /></a>
+          <a href="#"><img src="../Assets/cart.png" alt="" width="30" /></a>
+        </div>
+        
+        <!-- top right div for desktop screens -->
+        <div class="hidden md:block ">
+          <ul class="flex items-center space-x-4 font-manrope text-gray-400 text-base font-bold  ">
+            <li class=""><a href="./index.html">Home</a></li>
+            <li><a href="#"><img src="../Assets/VerticalRectangle.png" alt=""></a></li>
+            <li class="flex items-center space-x-1   ">
+              <a href="#">Cart</a>
+              <span class="inline-flex items-center justify-center w-4 h-4  text-xs font-semibold text-Neutral-White bg-Secondary-Tchina-Orange rounded-full">
+                2
+              </span>
+            </li>
+            <div class="flex space-x-1">
+              <li><a href="#"><img src="../Assets/VerticalRectangle.png" alt=""></a></li>
+            <li><a href="#"><img src="../Assets/VerticalRectangle.png" alt=""></a></li>
+            </div>
+            <li><a href="#"><img class="w-10 h-10 rounded-full" src="../Assets/ProfilePicture.jpg" alt="Rounded avatar"></a></li>
+          </ul>
+        </div>
+      </header>
+  
+     <!-- src of product line -->
+      <ul class="flex items-center space-x-5 py-6 ml-3 md:ml-16">
+        <li><a href="./index.html" class="font-poppins font-semibold text-sm text-Primary-Ocean-Blue">Authentic</a></li>
+        <li><img src="../Assets/Vector 4.svg" alt=""></li>
+        <li><a href="./index.html" class="font-poppins font-semibold text-sm text-Primary-Ocean-Blue">Home</a></li>
+        <li><img src="../Assets/Vector 4.svg" alt=""></li>
+        <li><a href="./index.html" class="font-poppins font-semibold text-sm text-Primary-Ocean-Blue">Top Sales</a></li>
+        <li><img src="../Assets/Vector 4.svg" alt=""></li>
+        <li class="font-poppins font-semibold text-sm text-Primary-Night-Blue">Disel Fuel For Life </li>
+      </ul>
+
+
+</body>
+</html>
