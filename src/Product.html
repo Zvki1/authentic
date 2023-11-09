@@ -8,21 +8,53 @@
   </head>
   <body class="bg-Neutral-10">
     <!-- toast notification -->
-    <div id="toast-success" class="hidden absolute right-4 top-28 flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800" role="alert">
-      <div class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200">
-          <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-              <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
-          </svg>
-          <span class="sr-only">Check icon</span>
+    <div
+      id="toast-success"
+      class="hidden absolute right-4 top-28 flex items-center w-full max-w-xs p-4 mb-4 text-gray-500 bg-white rounded-lg shadow dark:text-gray-400 dark:bg-gray-800"
+      role="alert"
+    >
+      <div
+        class="inline-flex items-center justify-center flex-shrink-0 w-8 h-8 text-green-500 bg-green-100 rounded-lg dark:bg-green-800 dark:text-green-200"
+      >
+        <svg
+          class="w-5 h-5"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="currentColor"
+          viewBox="0 0 20 20"
+        >
+          <path
+            d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"
+          />
+        </svg>
+        <span class="sr-only">Check icon</span>
       </div>
       <div class="ml-3 text-sm font-normal">Product Added successfully.</div>
-      <button id="close_button" type="button" class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8 " data-dismiss-target="#toast-success" aria-label="Close">
-          <span class="sr-only">Close</span>
-          <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
-              <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
-          </svg>
+      <button
+        id="close_button"
+        type="button"
+        class="ml-auto -mx-1.5 -my-1.5 bg-white text-gray-400 hover:text-gray-900 rounded-lg focus:ring-2 focus:ring-gray-300 p-1.5 hover:bg-gray-100 inline-flex items-center justify-center h-8 w-8"
+        data-dismiss-target="#toast-success"
+        aria-label="Close"
+      >
+        <span class="sr-only">Close</span>
+        <svg
+          class="w-3 h-3"
+          aria-hidden="true"
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 14 14"
+        >
+          <path
+            stroke="currentColor"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+            stroke-width="2"
+            d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"
+          />
+        </svg>
       </button>
-  </div>
+    </div>
     <!-- header section -->
     <header
       class="flex justify-between items-center p-4 gap-x-4 bg-Neutral-White md:justify-around"
@@ -36,7 +68,9 @@
           width="36"
           height="36"
         />
-        <a href="./index.html" class="font-manrope font-bold text-base">Authentic</a>
+        <a href="./index.html" class="font-manrope font-bold text-base"
+          >Authentic</a
+        >
       </div>
 
       <!-- search form -->
@@ -89,7 +123,10 @@
           </li>
           <li class="flex items-center space-x-1">
             <a href="#">Cart</a>
-            <div id="cart-counter" class="inline-flex items-center justify-center w-4 h-4 text-xs font-semibold text-Neutral-White bg-Secondary-Tchina-Orange rounded-full">
+            <div
+              id="cart-counter"
+              class="inline-flex items-center justify-center w-4 h-4 text-xs font-semibold text-Neutral-White bg-Secondary-Tchina-Orange rounded-full"
+            >
               0
             </div>
           </li>
@@ -149,7 +186,7 @@
     </ul>
 
     <!-- product section mobile version -->
-    <div class=" px-6 mb-4 flex flex-col items-center lg:hidden">
+    <div class="hidden px-6 mb-4 flex flex-col items-center lg:hidden">
       <div>
         <!-- product pic -->
         <a href=""><img src="../Assets/best-product/B1-1.png" alt="" /></a>
@@ -186,12 +223,14 @@
             </p>
             <!-- product price -->
             <div class="flex justify-between">
-              <div 
+              <div
                 class="text-Primary-Ocean-Blue font-manrope font-semibold text-3xl"
               >
                 31500 <span class="font-manrope font-normal text-xl">DA</span>
-            </div>
-              <div  class="text-Neutral-50 font-manrope text-xl font-semibold line-through">
+              </div>
+              <div
+                class="text-Neutral-50 font-manrope text-xl font-semibold line-through"
+              >
                 38000
                 <span class="font-manrope font-normal text-base no-underline"
                   >DA</span
@@ -230,97 +269,135 @@
     </div>
 
     <!-- product section desktop version -->
-    <section class="hidden lg:flex items-start justify-start  gap-x-10  py-10 px-16 lg:justify-center ">
+    <section
+      class="flex items-center flex-col lg:flex-row gap-x-10 py-10 px-12 justify-center"
+    >
       <!-- product images -->
-      <div class="flex flex-col space-y-5  ">
+      <div class="flex flex-col mx-2 space-y-5">
         <!-- product main image -->
         <!-- needs the favorite icon -->
-        <div class="max-w-sm ">
+        <div class="max-w-sm overflow-hidden">
           <img
             id="product_image"
-            class="rounded-lg shadow-lg w-full h-full object-contain"
+            class="rounded-lg shadow-lg h-full w-full object-contain"
             src="../Assets/best-product/B1-1.png"
             alt="image description"
           />
         </div>
         <!-- product small images -->
-        <div class="flex flex-row space-x-5">
-          <button id="image_1" class="w-20 rounded-lg  focus:ring-2 ">
-            <img class="w-full h-full object-contain rounded-lg shadow-lg " src="../Assets/best-product/B1-1.png" alt="Default avatar">
+        <div class="flex flex-row space-x-4 sm:space-x-5">
+          <button id="image_1" class="w-20 rounded-lg focus:ring-2">
+            <img
+              class="w-full h-full object-contain rounded-lg shadow-lg"
+              src="../Assets/best-product/B1-1.png"
+              alt="Default avatar"
+            />
           </button>
-          <button id="image_2" class="w-20 rounded-lg  focus:ring-2 ">
-            <img class="w-full h-full object-contain rounded-lg shadow-lg " src="../Assets/best-product/B4-2.png" alt="Default avatar">
+          <button id="image_2" class="w-20 rounded-lg focus:ring-2">
+            <img
+              class="w-full h-full object-contain rounded-lg shadow-lg"
+              src="../Assets/best-product/B4-2.png"
+              alt="Default avatar"
+            />
           </button>
-          <button id="image_3" class="w-20 rounded-lg  focus:ring-2 ">
-            <img class="w-full h-full object-contain rounded-lg shadow-lg " src="../Assets/best-product/B2-1.png" alt="Default avatar">
+          <button id="image_3" class="w-20 rounded-lg focus:ring-2">
+            <img
+              class="w-full h-full object-contain rounded-lg shadow-lg"
+              src="../Assets/best-product/B2-1.png"
+              alt="Default avatar"
+            />
           </button>
-          <button id="image_4" class="w-20 rounded-lg  focus:ring-2 ">
-            <img class="w-full h-full object-contain rounded-lg shadow-lg " src="../Assets/best-product/B3-1.png" alt="Default avatar">
+          <button id="image_4" class="w-20 rounded-lg focus:ring-2">
+            <img
+              class="w-full h-full object-contain rounded-lg shadow-lg"
+              src="../Assets/best-product/B3-1.png"
+              alt="Default avatar"
+            />
           </button>
         </div>
       </div>
-
 
       <!-- product details -->
-      <div class="pt-6 space-y-5 flex flex-col  w-1/3">
-          <!-- brand title -->
-          <p id="brandtitle" class="text-base font-poppins text-Secondary-Tchina-Orange font-semibold">Dolce&Gabanna</p>
+      <div class="pt-6 space-y-5 flex flex-col w-full m-2 lg:w-1/3">
+        <!-- brand title -->
+        <p
+          id="brandtitle"
+          class="text-base font-poppins text-Secondary-Tchina-Orange font-semibold"
+        >
+          Dolce&Gabanna
+        </p>
         <!-- product infos -->
-      <div class="">
-        <!-- product title -->
-        <h2 id="producttitle" class="font-poppins font-bold text-4xl text-Neutral-90 capitalize">
-          The Only One
-        </h2>
-        <!-- product Stats -->
-        <div class="flex gap-x-5 text-base text-Neutral-50  font-semibold">
-          <p>1,6k + Reviews</p>
-          <img src="../Assets/point.svg" alt="" />
-          <p>4,7k + Sold</p>
-          <img src="../Assets/point.svg" alt="" />
-          <p
-            class="text-Secondary-Mandarin-Orange font-manrope font-semibold text-xl"
+        <div class="">
+          <!-- product title -->
+          <div class="flex gap-x-5 items-center justify-between">
+            <h2
+              id="producttitle"
+              class="font-poppins font-bold text-4xl text-Neutral-90 capitalize"
+            >
+              The Only One
+            </h2>
+            <p
+              class="lg:hidden text-Secondary-Mandarin-Orange font-manrope font-semibold text-xl"
+            >
+              -20%
+            </p>
+          </div>
+          <!-- product Stats -->
+          <div
+            class="hidden lg:flex gap-x-5 text-base text-Neutral-50 font-semibold"
           >
-            -20%
+            <p>1,6k + Reviews</p>
+            <img src="../Assets/point.svg" alt="" />
+            <p>4,7k + Sold</p>
+            <img src="../Assets/point.svg" alt="" />
+            <p
+              class="text-Secondary-Mandarin-Orange font-manrope font-semibold text-xl"
+            >
+              -20%
+            </p>
+          </div>
+        </div>
+        <!-- people listed stats -->
+        <div class="flex items-center gap-x-2">
+          <div class="flex -space-x-3">
+            <img
+              class="w-6 h-6 border-2 border-white rounded-full dark:border-gray-800"
+              src="../Assets/testimonial/testimonial1.jpg"
+              alt=""
+            />
+            <img
+              class="w-6 h-6 border-2 border-white rounded-full dark:border-gray-800"
+              src="../Assets/testimonial/testimonial2.jpg"
+              alt=""
+            />
+            <img
+              class="w-6 h-6 border-2 border-white rounded-full dark:border-gray-800"
+              src="../Assets/testimonial/testimonial3.jpg"
+              alt=""
+            />
+            <a
+              class="flex items-center justify-center w-6 h-6 text-[8px] font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
+              href="#"
+              >+99</a
+            >
+          </div>
+          <p class="text-base text-Neutral-90 font-poppins font-medium">
+            99+ people listed
           </p>
         </div>
-      </div>
-      <!-- people listed stats -->
-      <div class="flex items-center gap-x-2">
-        <div class="flex -space-x-3">
-          <img
-            class="w-6 h-6 border-2 border-white rounded-full dark:border-gray-800"
-            src="../Assets/testimonial/testimonial1.jpg"
-            alt=""
-          />
-          <img
-            class="w-6 h-6 border-2 border-white rounded-full dark:border-gray-800"
-            src="../Assets/testimonial/testimonial2.jpg"
-            alt=""
-          />
-          <img
-            class="w-6 h-6 border-2 border-white rounded-full dark:border-gray-800"
-            src="../Assets/testimonial/testimonial3.jpg"
-            alt=""
-          />
-          <a
-            class="flex items-center justify-center w-6 h-6 text-[8px] font-medium text-white bg-gray-700 border-2 border-white rounded-full hover:bg-gray-600 dark:border-gray-800"
-            href="#"
-            >+99</a
-          >
-        </div>
-        <p class="text-base text-Neutral-90 font-poppins font-medium">99+ people listed</p>
-      </div>
         <!-- product description -->
-        <div class="text-base text-Neutral-50 font-poppins  font-medium" >
-            <h2 class="text-base  font-semibold font-poppins text-Neutral-90">Description:</h2>
-            <h3 class="mt-2">Audio Technology</h3>
-            <ul class="list-disc list-inside pl-2">
-                <li >Custom high-excursion Apple driver.</li>
-                <li>Custom high dynamic range amplifier.</li>
-                <li>Personalized Spatial Audio with dynamic head tracking 1</li>
-                <li> Adaptive EQ.</li>
-            </ul>
-            <!-- <p class="pt-1 text-Neutral-50">
+        <div class="text-base text-Neutral-50 font-poppins font-medium">
+          <h2 class="text-base font-semibold font-poppins text-Neutral-90">
+            Description:
+          </h2>
+          <h3 class="mt-2">Audio Technology</h3>
+          <ul class="list-disc list-inside pl-2">
+            <li>Custom high-excursion Apple driver.</li>
+            <li>Custom high dynamic range amplifier.</li>
+            <li>Personalized Spatial Audio with dynamic head tracking 1</li>
+            <li>Adaptive EQ.</li>
+          </ul>
+          <!-- <p class="pt-1 text-Neutral-50">
                 Audio Technology: <br />
                 Custom high-excursion Apple driver. <br />
                 Custom high dynamic range amplifier.<br />
@@ -328,42 +405,73 @@
                 Adaptive EQ.<br />
               </p> -->
         </div>
-        </div>
+      </div>
       <!-- product order -->
-      <div class="flex flex-col items-start  bg-Primary-Cloud-Blue p-5 gap-y-5 rounded-[20px] w-1/5  " >
-        <h2 class="text-xl font-semibold text-Neutral-90 font-poppins">Set Order</h2>
+      <div
+        class="flex flex-col items-start bg-Primary-Cloud-Blue p-5 m-2 w-full gap-y-5 rounded-[20px] lg:w-1/4"
+      >
+        <h2 class="text-xl font-semibold text-Neutral-90 font-poppins">
+          Set Order
+        </h2>
         <!-- <img  src="../Assets/Rectangle 83.svg" alt="Rectangle"> -->
-        <hr class="w-full h-[1px]  bg-Primary-Ocean-Blue border-0 rounded-lg  ">
-        
+        <hr class="w-full h-[1px] bg-Primary-Ocean-Blue border-0 rounded-lg" />
+
         <!-- product name -->
         <div class="flex flex-wrap gap-y-3 items-center gap-x-3">
-            <img id="orderimage" class="w-24 h-24 rounded-lg object-contain bg-white" src="../Assets/best-product/B1-1.png" alt="Default avatar">
-            <h3 id="ordertitle" class="text-Neutral-90 font-poppins text-base font-semibold">The Only One</h3> 
+          <img
+            id="orderimage"
+            class="w-24 h-24 rounded-lg object-contain bg-white"
+            src="../Assets/best-product/B1-1.png"
+            alt="Default avatar"
+          />
+          <h3
+            id="ordertitle"
+            class="text-Neutral-90 font-poppins text-base font-semibold"
+          >
+            The Only One
+          </h3>
         </div>
         <!-- counter -->
-        <div class="flex  items-center gap-x-6 py-3 px-3 rounded-lg border-[3px] border-Primary-Ocean-Blue">
-            <button id="decrement-btn"><img src="../Assets/moin.svg" alt=""></button>
-            <div id="counter-value" class="font-poppins text-base text-center font-semibold">1</div>
-            <button id="increment-btn"><img src="../Assets/plus.svg" alt=""></button>
+        <div
+          class="flex items-center gap-x-6 py-3 px-3 rounded-lg border-[3px] border-Primary-Ocean-Blue"
+        >
+          <button id="decrement-btn">
+            <img src="../Assets/moin.svg" alt="" />
+          </button>
+          <div
+            id="counter-value"
+            class="font-poppins text-base text-center font-semibold"
+          >
+            1
+          </div>
+          <button id="increment-btn">
+            <img src="../Assets/plus.svg" alt="" />
+          </button>
         </div>
         <!-- total price -->
         <div class="space-y-2">
-          <p  class="text-Neutral-90 font-poppins text-base font-semibold">Total Price:</p>
+          <p class="text-Neutral-90 font-poppins text-base font-semibold">
+            Total Price:
+          </p>
           <div>
-              <p id="beforeprice" class="text-2xl  font-semibold font-manrope   text-Neutral-50">
-                <span class="line-through">
-                  38000
-              </span>
-                <span class="text-sm font-normal line-through">
-                  DA
-                </span>
-              </p>
-              <p id="afterprice" class="text-Primary-Ocean-Blue font-manrope text-3xl font-semibold">31500<span class="text-xl font-normal">DA</span></p>
+            <p
+              id="beforeprice"
+              class="text-2xl font-semibold font-manrope text-Neutral-50"
+            >
+              <span class="line-through"> 38000 </span>
+              <span class="text-sm font-normal line-through"> DA </span>
+            </p>
+            <p
+              id="afterprice"
+              class="text-Primary-Ocean-Blue font-manrope text-3xl font-semibold"
+            >
+              31500<span class="text-xl font-normal">DA</span>
+            </p>
           </div>
-      </div>
+        </div>
         <!-- Add To Cart Button -->
         <button
-        id="add-to-cart-btn"
+          id="add-to-cart-btn"
           type="button"
           class="xl:group-hover:visible text-white bg-Primary-Night-Blue hover:bg-Primary-Ocean-Blue focus:ring-4 focus:outline-none focus:ring-blue-200 font-medium rounded-xl text-sm px-5 py-4 inline-flex justify-center w-full text-center"
         >
@@ -372,8 +480,7 @@
       </div>
     </section>
 
-
-     <footer class="bg-Neutral-90">
+    <footer class="bg-Neutral-90">
       <div class="mx-auto max-w-screen-xl px-4 py-10 sm:px-6 lg:px-8">
         <!-- <div class="lg:flex lg:items-start lg:gap-8"> -->
         <div>
@@ -541,8 +648,8 @@
           </div>
         </div>
         <!-- mt-8 px-4 pb-8 border-t border-gray-100 pt-8 -->
-        <div class="mt-8 border-t border-gray-100 pt-8">
-          <div class="sm:flex sm:justify-between">
+        <div class="mt-8 border-t border-gray-100 pt-6">
+          <div class="flex flex-col sm:flex-row gap-3 sm:justify-between">
             <ul
               class="col-span-2 flex justify-start gap-6 lg:col-span-5 lg:justify-end"
             >
