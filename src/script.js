@@ -21,7 +21,7 @@ const orderimage = document.getElementById('orderimage');
 
 const toast_success = document.getElementById('toast-success');
 const close_button = document.getElementById('close_button');
-let counter = 0;
+let counter = 1;
 let counterofcart = 0;
 
 // To increment the value of counter
@@ -29,16 +29,16 @@ incrementBtn.addEventListener('click', () => {
     counter++;
     counterValue.innerHTML = counter;
     beforeprice.innerHTML =  "<span class=\"line-through\">"+ counter*38000 +"</span> <span class=\"text-sm font-normal line-through\">DA</span>";
-    afterprice.innerHTML = counter*31500+"0 <span class=\"text-xl font-normal\">DA</span>";
+    afterprice.innerHTML = counter*31500+"<span class=\"text-xl font-normal\">DA</span>";
     
 });
  
 // To decrement the value of counter
 decrementBtn.addEventListener('click', () => {
-    if(counter > 0){
+    if(counter > 1){
         counter--;
         beforeprice.innerHTML =  "<span class=\"line-through\">"+ counter*38000 +"</span> <span class=\"text-sm font-normal line-through\">DA</span>";
-        afterprice.innerHTML = counter*31500+"0 <span class=\"text-xl font-normal\">DA</span>";
+        afterprice.innerHTML = counter*31500+" <span class=\"text-xl font-normal\">DA</span>";
     }
     counterValue.innerHTML = counter;
     
