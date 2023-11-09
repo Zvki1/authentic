@@ -904,6 +904,14 @@ video {
   width: 2rem;
 }
 
+.w-1\/4{
+  width: 25%;
+}
+
+.w-1\/5{
+  width: 20%;
+}
+
 .max-w-2xl{
   max-width: 42rem;
 }
@@ -930,6 +938,10 @@ video {
 
 .max-w-xs{
   max-width: 20rem;
+}
+
+.max-w-screen-lg{
+  max-width: 1024px;
 }
 
 .flex-1{
@@ -2162,6 +2174,10 @@ video {
 
   .lg\:justify-end{
     justify-content: flex-end;
+  }
+
+  .lg\:justify-center{
+    justify-content: center;
   }
 
   .lg\:justify-between{
