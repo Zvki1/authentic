@@ -19,6 +19,8 @@ const producttitle= document.getElementById('producttitle');
 
 const orderimage = document.getElementById('orderimage');
 
+const toast_success = document.getElementById('toast-success');
+const close_button = document.getElementById('close_button');
 let counter = 0;
 let counterofcart = 0;
 
@@ -42,12 +44,18 @@ decrementBtn.addEventListener('click', () => {
     
 });
 
+// closing the toast message
+close_button.addEventListener('click', () => {
+    toast_success.classList.add('hidden');
+} );
 
 // To add the value of counter to cart
 addtocartBtn.addEventListener('click', () => {
     counterofcart=counterofcart+counter;
     cartcounter.innerHTML = counterofcart;
-    
+
+    // displaying the toast message
+    toast_success.classList.remove('hidden');
     
 } );
 
