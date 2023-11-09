@@ -62,31 +62,31 @@ addtocartBtn.addEventListener('click', () => {
 
 // To change the image of the product
 image1.addEventListener('click', () => {
-    product_image.src = "../Assets/best-product/B1-1.png";
-    orderimage.src = "../Assets/best-product/B1-1.png";
+    product_image.src = "./Assets/best-product/B1-1.png";
+    orderimage.src = "./Assets/best-product/B1-1.png";
    
     brandtitle.innerHTML = "Dolce&Gabanna";
     producttitle.innerHTML = "The Only One";
     ordertitle.innerHTML = "The Only One";
 } );
 image2.addEventListener('click', () => {
-    product_image.src = "../Assets/best-product/B4-2.png";
-    orderimage.src = "../Assets/best-product/B4-2.png";
+    product_image.src = "./Assets/best-product/B4-2.png";
+    orderimage.src = "./Assets/best-product/B4-2.png";
     
     brandtitle.innerHTML = "Mugler";
     producttitle.innerHTML = "Aura";
     ordertitle.innerHTML = "Aura";
 } );
 image3.addEventListener('click', () => {
-    product_image.src = "../Assets/best-product/B2-1.png";
-    orderimage.src = "../Assets/best-product/B2-1.png";
+    product_image.src = "./Assets/best-product/B2-1.png";
+    orderimage.src = "./Assets/best-product/B2-1.png";
     brandtitle.innerHTML = "Psco Rabanne";
     producttitle.innerHTML = "Olmpea";
     ordertitle.innerHTML = "Olmpea";
 } );
 image4.addEventListener('click', () => {
-    product_image.src = "../Assets/best-product/B3-1.png";
-    orderimage.src = "../Assets/best-product/B3-1.png";
+    product_image.src = "./Assets/best-product/B3-1.png";
+    orderimage.src = "./Assets/best-product/B3-1.png";
     brandtitle.innerHTML = "Calvin Klein";
     producttitle.innerHTML = "Eternity";
     ordertitle.innerHTML = "Eternity";
